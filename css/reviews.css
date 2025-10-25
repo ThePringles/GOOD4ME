@@ -1,0 +1,148 @@
+.reviews{ 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-height: 885px;
+  padding: 176px 329px 175px 331px;
+
+  background-image: image-set(url(../img/reviews-bg.jpg));
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: center;
+}
+
+.reviews__content{
+  display: flex;
+  column-gap: 106px;
+}
+
+.reviews__content-card{
+  display: flex;
+  flex-direction: column;
+  max-width: 620px;
+  max-height: 455px;
+  padding-top: 0px;
+}
+
+.review-card__title{
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 25px;
+  letter-spacing: 4px;
+  color: var(--color-dark);
+  margin-bottom: 46px;
+}
+
+.review-card__sabtitle{
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 25px;
+  letter-spacing: 4px;
+  color: var(--color-orange);
+  margin-bottom: 24px;
+}
+
+.review-card{
+  display: flex;
+  flex-direction: column;
+  row-gap: 23px;
+  margin-top: 24px;
+  margin-bottom: 32px;
+}
+
+.review-card__body{
+  font-size: 26px;
+  font-weight: 500;
+  line-height: 44px;
+  letter-spacing: 1px;
+  color: var(--color-dark-alt);
+}
+
+.review-card__name{
+  font-weight: 600;
+  line-height: 20px;
+  letter-spacing: 1px;
+  color: var(--color-orange);
+}
+
+.reviews__actions{
+  display: flex;
+  column-gap: 20px;
+}
+
+.reviews__arrow-button{
+transition: 0.2s ease-in;
+}
+
+.reviews__arrow-button:hover{
+  opacity: 0.7;
+}
+
+.reviews__content-img{
+pointer-events: none;
+}
+
+@media(max-width: 1715px){
+  .reviews {
+    padding: 176px 129px 175px 131px;
+}
+}
+
+@media(max-width: 1600px){
+.reviews {
+  background-image: none;
+  background-color: var(--background-color);
+  max-width: 100%;
+  max-height: 100%;
+  padding-block: 100px;
+  padding-inline: 70px; 
+}
+
+  .reviews__content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 30px;
+  }
+
+  .reviews__content-card{
+    align-items: center;
+   
+  }
+}
+
+@media(max-width: 1600px){
+.review-card__title {
+  font-size: 18px;
+  margin-bottom: 26px;
+}
+
+.review-card__sabtitle {
+  font-size: 26px;
+  margin-bottom: 14px;
+}
+
+.review-card {
+  margin-bottom: 15px;
+}
+
+.review-card__body{
+  font-size: 22px;
+}
+}
+
+@media(max-width: 530px){
+  .reviews__content {
+    row-gap: 140px ;
+  }
+}
+
+@media(max-width: 416px) {
+  .reviews__content {
+    row-gap: 210px;
+  }
+
+   .review-card__sabtitle{
+   white-space: nowrap;
+  }
+}

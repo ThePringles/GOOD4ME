@@ -1,0 +1,192 @@
+.deal{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 66px 119px 138px 122px;
+}
+
+.deal__header{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 759px;
+  row-gap: 23px;
+  margin-bottom: 36px;
+}
+
+.deal__title{
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 32px;
+  color: var(--color-dark);
+}
+
+.deal__header hr {
+  width: 127px;
+  height: 4px;
+  background-color: var(--color-orange);
+}
+
+.deal__text{
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 24px;
+  color: var(--color-dark-alt);
+  text-align: center;
+}
+
+.deal__row{
+  max-width: 1679px;
+  height: auto;
+  margin-bottom: 138px;
+}
+
+.deal__row-list{
+  display: flex;
+  column-gap: 30px;
+}
+
+.deal__row-item{
+display: flex;
+flex-direction: column;
+row-gap: 22px;
+}
+
+.deal__row-img{
+  pointer-events: none;
+  width: 100%;
+  height: auto;
+}
+
+.deal__row-img.is-curren{
+width: 100%;
+height: auto;
+background-color: var(--background-color-grey);
+padding: 45px 42px;
+}
+
+.deal__row-description{
+font-size: 18px;
+font-weight: 500;
+line-height: 24px;
+color: var(--color-dark);
+text-align: center;
+}
+
+.dael__offer{
+  max-width: 1194px;
+  max-height: 178px;
+}
+
+.dael__offer-list{
+  display: flex;
+  column-gap: 171px;
+}
+
+.dael__offer-item{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 284px;
+  height: 100%;
+}
+
+.dael__offer-item svg{
+  display: block;
+  margin: auto;
+  z-index: 6;
+}
+
+.circle {
+  position: absolute;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background-color: #F6623E;
+  z-index: 2;
+  left: 49%;
+  top: 27px;
+}
+
+.dael__offer-title{
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 32px;
+  color: var(--color-dark);
+  margin-top: 24.9px;
+  margin-bottom: 11px;
+}
+
+.dael__offer-description{
+  line-height: 20px;
+  color: var(--color-grey);
+}
+
+@media(max-width: 1370px){
+  .deal__row {
+     width: 100%;
+     height: auto;
+     margin-bottom: 100px;
+   }
+ 
+  .deal__row-list{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px ;
+  }
+
+  .dael__offer-list{
+    column-gap: 30px;
+  }
+}
+
+@media(max-width: 1160px){
+
+  .deal__header {
+      width: auto;
+    }
+   
+  .dael__offer-list {
+    column-gap: 20;
+  }
+
+  .dael__offer-item{
+    width: 100%;
+  }
+
+  .dael__offer-title {
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 8px;
+  }
+
+  .dael__offer-description {
+    font-size: 14px;
+  }
+}
+
+@media(max-width: 767px){
+  .deal {
+    padding-inline: 80px ;
+  }
+
+  .deal__row-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+  }
+
+  .deal__title{
+  font-size: 30px;
+  white-space: nowrap;
+  }
+
+  .dael__offer {
+    max-height: 100%;
+  }
+
+  .dael__offer-list{
+    flex-direction: column;
+  }
+}

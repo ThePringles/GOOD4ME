@@ -1,0 +1,69 @@
+:root{
+  --color-orange:#F6623E;
+  --color-dark:#000000;
+  --color-dark-alt:#454545;
+  --color-grey:#828181;
+  --color-light:#FFFFFF;
+
+  --background-color:#FFF8F6;
+  --background-color-grey:#E8E8E8 ;
+
+  --font-family-base: 'Jost', sans-serif;
+}
+
+.visually-hidden {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  margin: -1px !important;
+  border: 0 !important;
+  padding: 0 !important;
+  white-space: nowrap !important;
+  clip-path: inset(100%) !important;
+  clip: rect(0 0 0 0) !important;
+  overflow: hidden !important;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-family-base);
+  font-weight: 400;
+  font-size: 16px;
+  color:var(--color-dark);
+}
+
+.button-orange{
+  width: 140px;
+  height: 45px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: var(--color-light);
+  background-color: var(--color-orange);
+  transition: 0.2s ease;
+}
+
+.button-orange:hover{
+  background-color:var(--color-orange);
+  transform: translateY(-3px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.button-lihgt{
+  width: 255px;
+  height: 56px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: var(--color-dark);
+  border: 2px solid var(--color-orange);
+  transition: 0.2s ease;
+}
+
+.button-lihgt:hover{
+  color: var(--color-light);
+  background-color: var(--color-orange);
+  transform: translateY(-3px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
