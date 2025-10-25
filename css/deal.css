@@ -1,11 +1,11 @@
-.deal{
+.deal {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 66px 119px 138px 122px;
 }
 
-.deal__header{
+.deal__header {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -14,7 +14,7 @@
   margin-bottom: 36px;
 }
 
-.deal__title{
+.deal__title {
   font-size: 36px;
   font-weight: 500;
   line-height: 32px;
@@ -27,7 +27,7 @@
   background-color: var(--color-orange);
 }
 
-.deal__text{
+.deal__text {
   font-size: 18px;
   font-weight: 500;
   line-height: 24px;
@@ -35,55 +35,55 @@
   text-align: center;
 }
 
-.deal__row{
+.deal__row {
   max-width: 1679px;
   height: auto;
   margin-bottom: 138px;
 }
 
-.deal__row-list{
+.deal__row-list {
   display: flex;
   column-gap: 30px;
 }
 
-.deal__row-item{
-display: flex;
-flex-direction: column;
-row-gap: 22px;
+.deal__row-item {
+  display: flex;
+  flex-direction: column;
+  row-gap: 22px;
 }
 
-.deal__row-img{
+.deal__row-img {
   pointer-events: none;
   width: 100%;
   height: auto;
 }
 
-.deal__row-img.is-curren{
-width: 100%;
-height: auto;
-background-color: var(--background-color-grey);
-padding: 45px 42px;
+.deal__row-img.is-curren {
+  width: 100%;
+  height: auto;
+  background-color: var(--background-color-grey);
+  padding: 45px 42px;
 }
 
-.deal__row-description{
-font-size: 18px;
-font-weight: 500;
-line-height: 24px;
-color: var(--color-dark);
-text-align: center;
+.deal__row-description {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 24px;
+  color: var(--color-dark);
+  text-align: center;
 }
 
-.dael__offer{
+.dael__offer {
   max-width: 1194px;
   max-height: 178px;
 }
 
-.dael__offer-list{
+.dael__offer-list {
   display: flex;
   column-gap: 171px;
 }
 
-.dael__offer-item{
+.dael__offer-item {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -92,7 +92,7 @@ text-align: center;
   height: 100%;
 }
 
-.dael__offer-item svg{
+.dael__offer-item svg {
   display: block;
   margin: auto;
   z-index: 6;
@@ -103,13 +103,13 @@ text-align: center;
   width: 45px;
   height: 45px;
   border-radius: 50%;
-  background-color: #F6623E;
+  background-color: #f6623e;
   z-index: 2;
   left: 49%;
   top: 27px;
 }
 
-.dael__offer-title{
+.dael__offer-title {
   font-size: 24px;
   font-weight: 500;
   line-height: 32px;
@@ -118,40 +118,39 @@ text-align: center;
   margin-bottom: 11px;
 }
 
-.dael__offer-description{
+.dael__offer-description {
   line-height: 20px;
   color: var(--color-grey);
 }
 
-@media(max-width: 1370px){
+@media (max-width: 1370px) {
   .deal__row {
-     width: 100%;
-     height: auto;
-     margin-bottom: 100px;
-   }
- 
-  .deal__row-list{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 30px ;
+    width: 100%;
+    height: auto;
+    margin-bottom: 100px;
   }
 
-  .dael__offer-list{
+  .deal__row-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+
+  .dael__offer-list {
     column-gap: 30px;
   }
 }
 
-@media(max-width: 1160px){
-
+@media (max-width: 1160px) {
   .deal__header {
-      width: auto;
-    }
-   
+    width: auto;
+  }
+
   .dael__offer-list {
     column-gap: 20;
   }
 
-  .dael__offer-item{
+  .dael__offer-item {
     width: 100%;
   }
 
@@ -166,27 +165,27 @@ text-align: center;
   }
 }
 
-@media(max-width: 767px){
+@media (max-width: 767px) {
   .deal {
-    padding-inline: 80px ;
+    padding-inline: 80px;
   }
 
   .deal__row-list {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 30px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
   }
 
-  .deal__title{
-  font-size: 30px;
-  white-space: nowrap;
+  .deal__title {
+    font-size: 30px;
+    white-space: nowrap;
   }
 
   .dael__offer {
     max-height: 100%;
   }
 
-  .dael__offer-list{
+  .dael__offer-list {
     flex-direction: column;
   }
 }

@@ -1,4 +1,4 @@
-.scroll{
+.scroll {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -6,14 +6,14 @@
   padding-bottom: 136px;
 }
 
-.scroll__title{
+.scroll__title {
   font-size: 36px;
   font-weight: 500;
   line-height: 32px;
   color: var(--color-dark);
 }
 
-.scroll__body{
+.scroll__body {
   display: flex;
   justify-content: center;
   column-gap: 30px;
@@ -21,18 +21,18 @@
   overflow-x: scroll;
 }
 
-.scroll__img{
+.scroll__img {
   width: 100%;
   aspect-ratio: 1;
   pointer-events: none;
   scroll-snap-align: start;
 }
 
-@media(max-width: 1024px){
+@media (max-width: 1024px) {
   .scroll__title {
     font-size: 30px;
   }
-  
+
   .scroll__body {
     column-gap: 10px;
   }

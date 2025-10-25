@@ -1,14 +1,14 @@
-:root{
-  --color-orange:#F6623E;
-  --color-dark:#000000;
-  --color-dark-alt:#454545;
-  --color-grey:#828181;
-  --color-light:#FFFFFF;
+:root {
+  --color-orange: #f6623e;
+  --color-dark: #000000;
+  --color-dark-alt: #454545;
+  --color-grey: #828181;
+  --color-light: #ffffff;
 
-  --background-color:#FFF8F6;
-  --background-color-grey:#E8E8E8 ;
+  --background-color: #fff8f6;
+  --background-color-grey: #e8e8e8;
 
-  --font-family-base: 'Jost', sans-serif;
+  --font-family-base: "Jost", sans-serif;
 }
 
 .visually-hidden {
@@ -32,10 +32,10 @@ body {
   font-family: var(--font-family-base);
   font-weight: 400;
   font-size: 16px;
-  color:var(--color-dark);
+  color: var(--color-dark);
 }
 
-.button-orange{
+.button-orange {
   width: 140px;
   height: 45px;
   font-weight: 500;
@@ -45,13 +45,13 @@ body {
   transition: 0.2s ease;
 }
 
-.button-orange:hover{
-  background-color:var(--color-orange);
+.button-orange:hover {
+  background-color: var(--color-orange);
   transform: translateY(-3px);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.button-lihgt{
+.button-lihgt {
   width: 255px;
   height: 56px;
   font-weight: 500;
@@ -61,7 +61,7 @@ body {
   transition: 0.2s ease;
 }
 
-.button-lihgt:hover{
+.button-lihgt:hover {
   color: var(--color-light);
   background-color: var(--color-orange);
   transform: translateY(-3px);
